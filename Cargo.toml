@@ -44,9 +44,11 @@ serde_with = "3.8.1"
 #sqlx = { version = "0.7", default-features = false, features = ["runtime-tokio", "tls-native-tls", "bigdecimal", "chrono", "postgres", "macros"] }
 sqlx = { version = "0.7", default-features = false, features = [
     "runtime-tokio",
-    "tls-rustls",  # Use this instead of default TLS
-    "postgres",    # If you're using PostgreSQL
-    "macros"      # If you need macro support
+    "tls-rustls",
+    "bigdecimal",
+    "chrono",
+    "postgres",
+    "macros"
 ]}
 
 strum = { version = "0.26.2", features = ["derive"] }
